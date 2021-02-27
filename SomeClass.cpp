@@ -1,3 +1,5 @@
+#include <iostream>
+
 #include "SomeClass.h"
 
 SomeClass::SomeClass(const bool someBoolData, const int someIntData)
@@ -24,4 +26,14 @@ void SomeClass::setSomeBoolData(const bool someBoolData)
 void SomeClass::setSomeIntData(const int someIntData)
 {
 	m_someIntData = someIntData;
-}
+}
+
+void SomeClass::printSomeBoolData() const
+{
+	std::cout << m_someBoolData;
+}
+
+void SomeClass::printSomeIntData() const
+{
+	std::cout << m_someIntData;
+}

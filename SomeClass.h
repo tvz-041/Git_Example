@@ -12,6 +12,10 @@ public:
 
 	void setSomeBoolData(const bool someBoolData);
 	void setSomeIntData(const int someIntData);
+
+	void printSomeBoolData() const;
+	void printSomeIntData() const;
+
 private:
 	bool m_someBoolData;
 	int m_someIntData;
